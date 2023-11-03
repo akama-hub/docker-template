@@ -25,7 +25,7 @@ services:
       # - ./media:/code/media
     restart: always
     ports:
-      - "6000:6000"
+      - "8000:8000"
     # env_file:
     #   - ./configs/dev/.env
     tty: true

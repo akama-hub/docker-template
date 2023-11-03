@@ -1,7 +1,7 @@
 # 公式からpython3.10 イメージをpull
 FROM python:3.10
 
-ENV PYTHONUNBUFFERED 1
+# ENV PYTHONUNBUFFERED 1
 
 RUN mkdir /code
 RUN mkdir /code/backend-app
@@ -13,4 +13,4 @@ ADD requirements.txt /code/backend-app
 RUN pip3 install -r requirements.txt
 ADD . /code/backend-app/
 
-RUN bash setup.sh
+# RUN bash setup.sh
